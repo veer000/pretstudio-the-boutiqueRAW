@@ -1,0 +1,26 @@
+{
+  "overview": "PretStudio The Boutique is a mobile-first e-commerce marketplace for premium Pakistani ladies Shalwar Qameez, featuring 50+ brands including Sapphire, Khaadi, Maria B, and more. The site offers advanced filtering, a 3-step checkout with COD and mobile payment options, blog content, and a full shopping experience optimized for Pakistani mobile users.",
+  "features": [
+    "Mobile-first responsive design for Pakistani market",
+    "12 products (2 real + 10 sample) with image galleries",
+    "Advanced filters by brand, fabric, size, price, occasion",
+    "3-step checkout: Shipping, Payment (COD/JazzCash/EasyPaisa), Review",
+    "LocalStorage cart and wishlist",
+    "15+ brand showcase pages",
+    "Blog with fashion and styling articles",
+    "WhatsApp customer support button",
+    "Size guide with measurement chart",
+    "Collections pages for Eid, Wedding, Lawn, and more"
+  ],
+  "category": "e-commerce",
+  "tags": [
+    "fashion",
+    "pakistan",
+    "shalwar-qameez",
+    "boutique",
+    "mobile-first",
+    "e-commerce",
+    "ladies-wear"
+  ],
+  "last_updated": "2026-04-18T11:13:47.159Z"
+}

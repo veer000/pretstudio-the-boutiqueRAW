@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Emerald Green as primary */
+    --primary: 0.38 0.12 162;
+    --primary-foreground: 0.98 0 0;
+
+    /* Gold as accent */
+    --accent: 0.68 0.12 75;
+    --accent-foreground: 0.15 0 0;
+
+    /* Soft Beige background */
+    --background: 0.98 0.008 80;
+    --foreground: 0.15 0.02 30;
+
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.02 30;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.02 30;
+
+    --secondary: 0.94 0.015 80;
+    --secondary-foreground: 0.3 0.04 30;
+
+    --muted: 0.93 0.01 80;
+    --muted-foreground: 0.5 0.02 30;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.98 0 0;
+
+    /* Maroon */
+    --maroon: 0.38 0.14 15;
+
+    --border: 0.88 0.02 80;
+    --input: 0.88 0.02 80;
+    --ring: 0.38 0.12 162;
+
+    --chart-1: 0.38 0.12 162;
+    --chart-2: 0.68 0.12 75;
+    --chart-3: 0.38 0.14 15;
+    --chart-4: 0.6 0.1 162;
+    --chart-5: 0.8 0.1 75;
+
+    --sidebar: 0.98 0.008 80;
+    --sidebar-foreground: 0.15 0.02 30;
+    --sidebar-primary: 0.38 0.12 162;
+    --sidebar-primary-foreground: 0.98 0 0;
+    --sidebar-accent: 0.93 0.01 80;
+    --sidebar-accent-foreground: 0.15 0.02 30;
+    --sidebar-border: 0.88 0.02 80;
+    --sidebar-ring: 0.38 0.12 162;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-gold { color: oklch(0.68 0.12 75); }
+  .bg-gold { background-color: oklch(0.68 0.12 75); }
+  .text-maroon { color: oklch(0.38 0.14 15); }
+  .bg-maroon { background-color: oklch(0.38 0.14 15); }
+  .border-gold { border-color: oklch(0.68 0.12 75); }
+  .border-maroon { border-color: oklch(0.38 0.14 15); }
+
+  .brand-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+  }
+  .brand-marquee:hover { animation-play-state: paused; }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .product-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  }
+
+  .announcement-bar {
+    background: linear-gradient(135deg, oklch(0.32 0.12 162) 0%, oklch(0.28 0.10 162) 100%);
+  }
+}
